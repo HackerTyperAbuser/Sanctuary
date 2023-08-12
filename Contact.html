@@ -1,0 +1,179 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Nghia Hiep
+ID: s3978270
+Acknowledgement: Acknowledge the resources that you use here.
+https://fonts.google.com/
+https://www.wix.com/website/templates/html/online-store/books-publishers
+https://www.youtube.com/watch?v=TzjRcwKuXQs&t=9s
+https://www.youtube.com/watch?v=t5zFfDdvApE
+https://www.betterworldbooks.com/
+https://bookshop.org/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a22a56ba44.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+
+<header>
+    <!-- Navigation bar -->
+    <nav id="nav_container">
+        <div class="logo">
+            <a href="loading_home.html"><img src="images/logo.png" alt="logo"></a>
+            
+            <label class="burger_bar" for="burger_menu"><i class="fa-solid fa-bars"></i></label>
+        </div>
+        <input type="checkbox" id="burger_menu">
+        <div class="nav_info">
+            <p><a href="loading_home.html">Home</a></p>
+            <p><a href="loading_nf_subcat.html">Non-Fiction</a></p>
+            <p><a href="loading_f_subcat.html">Fiction</a></p>
+            <p><a href="loading_child_subcat.html">Children</a></p>
+            <p><a href="Contact.html">Contact</a></p>
+        </div>
+            
+    </nav>    
+    <!-- Header --> 
+</header>
+
+
+<body>
+    <!-- Form -->
+    <section>
+
+        <div id="get_in_touch">
+            <!-- Contact Us Header -->
+            <p>Contact Us</p>
+        </div>
+
+        <br>
+
+        <div id="form"> 
+            <!-- Form -->
+            <div class="heading">
+                <!-- Drop box -->
+                <label for="contact">Contact Purpose</label>
+                <select name="option" id="container">
+                    <option value="sell_books">I want to sell books</option>
+                    <option value="buy_books">I want to buy books</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div class="sub_cont">
+                <!-- Name -->
+                <label for="fname">First Name</label>
+                <input type="text" class="container2" name="fname" placeholder="Your First Name">
+            </div>
+
+            <br>
+            <div class="sub_cont">
+                <label for="lname">Last Name</label>
+                <input type="text" class="container2" name="lname" placeholder="Your Last Name">
+            </div>
+
+            <br>
+
+            <div class="sub_cont">
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input type="email" class="container2" name="email" placeholder="Your Email">
+
+            </div>
+
+            <br>
+
+            <div class="sub_cont">
+                <!-- Phone -->
+                <label for="phone">Phone</label>
+                <input type="tel" class="container2" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Your Phone Number">
+            </div>
+
+            <br>
+
+            <div class="boxes_cont">
+                <label>Contact Preference</label>
+                <div>
+                    <input type="checkbox" class="checkbox" name="phone" value="phone">
+                    <label for="phone">By Phone</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="email" name="email" value="email">
+                    <label for="email">By Email</label>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="boxes_cont">
+                <!-- Weekly Newsletter -->
+                    <label>Would you like to receive our weekly newsletter?</label>
+        
+                <div>
+                    <label for="nl_yes">Yes</label>
+                    <input type="radio" id="nl_yes" name="newsletter" value="Yes" checked="checked">
+                </div>
+                <div>
+                    <label for="nl_no">No</label>
+                    <input type="radio" id="nl_no" name="newsletter" value="No"><br>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="area">
+                <!-- Text area -->
+                <label>Questions?</label>
+                <textarea rows="4" cols="50" name="comment" form="usrform" placeholder=" Enter your text here"></textarea>
+
+            </div>
+
+            <br>
+            <div class="BUTTON">
+                <button>Submit</button>
+                <button class="reset">Reset</button>
+            </div>
+
+        </div>
+
+    </section>
+    </div>
+
+</body>
+
+
+<footer>
+    <!-- Footer -->
+
+    <div class="nav_under">
+        <p>About Us</p>
+        <p>Privacy Policy</p>
+        <p>Terms</p>
+        <p>Copyright</p>
+        <p><a href="Contact.html">Contact Us</a></p>
+    </div>
+
+    <div id="icon">
+        <p class="follow">Follow Us:</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>   
+        <i class="fa-brands fa-twitter"></i>    
+    </div>
+
+</footer>
+</html>
